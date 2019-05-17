@@ -1,4 +1,4 @@
-# import the necessary packages
+#importing packages
 from imutils import paths
 import numpy as np
 import argparse
