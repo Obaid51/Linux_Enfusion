@@ -1,14 +1,20 @@
-#importing packages
-from imutils import paths
-import numpy as np
-import argparse
-import imutils
-import cv2
+# creating folder
+# importing date and time
+from datetime import date
 
-# construct the argument parser and parse the arguments
-ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--images", type=str, required=True,
-                help="path to input directory of images to stitch")
-ap.add_argument("-o", "--output", type=str, required=True,
-                help="path to the output image")
-args = vars(ap.parse_args())
+
+
+import os
+
+
+def createFolder(directory):
+    try:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+    except OSError:
+        print('Error: Creating directory. ' + directory)
+today = date.today()
+print("Today's date:", today)
+
+# Example
+createFolder('./data/')
