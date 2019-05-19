@@ -2,11 +2,7 @@
 # importing date and time
 from datetime import date
 
-
-
 import os
-
-
 def createFolder(directory):
     try:
         if not os.path.exists(directory):
@@ -15,6 +11,6 @@ def createFolder(directory):
         print('Error: Creating directory. ' + directory)
 today = date.today()
 print("Today's date:", today)
-
-# Example
-createFolder('./data/')
+name = input("Enter your name : ")
+data = (name+today)
+createFolder('./today + name/')
