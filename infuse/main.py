@@ -14,3 +14,6 @@ print("Today's date:", today)
 name = input("Enter your name : ")
 data = (name+today)
 createFolder('./today + name/')
+images = [np.random.randn(8, 12) for _ in range(50)]
+stacked =  np.stack(images, axis=0)
+print(stacked.shape)
