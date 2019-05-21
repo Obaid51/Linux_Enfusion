@@ -1,5 +1,6 @@
-# creating folder
-# importing date and time
+from __future__ import print_function
+import cv2
+import numpy as np
 from datetime import date
 
 import os
@@ -17,3 +18,4 @@ createFolder('./today + name/')
 images = [np.random.randn(8, 12) for _ in range(50)]
 stacked =  np.stack(images, axis=0)
 print(stacked.shape)
+h, status = cv2.findHomography(points1, points2)
