@@ -70,5 +70,5 @@ if __name__ == '__main__':
     print("Saving aligned image : ", outFilename);
     cv2.imwrite(outFilename, imReg)
 
-    # Print estimated homography
+    # Printing estimated homography
     print("Estimated homography : \n", h)
