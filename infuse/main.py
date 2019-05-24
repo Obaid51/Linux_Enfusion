@@ -1,6 +1,9 @@
 from __future__ import print_function
 import cv2
 import numpy as np
+#include <cv.h>
+#include <highgui.h>
+#include <iostream>
 
 MAX_FEATURES = 500
 GOOD_MATCH_PERCENT = 0.15
