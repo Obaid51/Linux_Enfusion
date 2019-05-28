@@ -4,7 +4,7 @@ import numpy as np
 
 
 MAX_FEATURES = 500
-GOOD_MATCH_PERCENT = 0.15
+GOOD_MATCH_PERCENT = 0.150
 
 
 def alignImages(im1, im2):
